@@ -106,22 +106,134 @@ header h1 {
   gap: 20px;
 }
 
+.sign-backgrund {
+  background: url('SUP.jpg') no-repeat center center ;
+}
+
 .start {
-  height: 70vh;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.a, .b, .c {
   display: flex;
-  justify-content: center; 
+  flex-direction: column;
+  align-items: center; 
+}
+
+.a h2, .b h2, .c h2 {
+  color: #c11515;
+  background-color: #000000;
+  border: 1px #c11515 solid;
+  margin-top: 35px;
+  padding: 10px 20px; 
+  border-radius: 20px;
+}
+
+.a p, .b p, .c p {
+  margin-top: 25px;
+  color: #000000;
   background-color: #a7a7a7;
+  height: 200px; 
+  width: 300px;
+  padding: 20px;
+  border: 2px #c11515 solid;
 }
 
 .formulär {
   height: 70vh;
   display: flex;
   justify-content: center; 
-  background-color: #10b810;
+  border-bottom: #c11515 2px solid;
 }
-.knapp {
-  height: 20vh;
-  background-color: #000000;
+
+.new-thread {
+  background-color: #a7a7a7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  height: 225px;
+  width: 500px;
+  border: 2px #c11515 solid;
+}
+
+.new-thread h3 {
+  color: rgb(0, 0, 0);
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-input {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px;
+  height: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.new-thread h3 {
+  text-align: center;
+}
+
+.tips {
+  height: 100vh;
+  background-color: #737373;
+  border-bottom: 2px #c11515 solid;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+}
+
+.tips-3 {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.tips-3 h2 {
+  margin: 10px;
+  margin-left: 40px;
+  text-decoration: underline;
+  font-size: 2em;
+  color: #000000;
+}
+
+.tips-3 p {
+  margin: 10px;
+  margin-left: 40px;
+  padding: 5px;
+  background-color: #a7a7a7;
+  border-radius: 15px;
+}
+
+.tranar-bild {
+  grid-column: 2;
+  width: 100%;
+  height: auto;
+  margin: 70px;
+}
+
+#bild {
+  height: 470px;
+  width: auto;
 }
 
 #vk {
@@ -166,6 +278,20 @@ header h1 {
   margin-bottom: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   background-color: #000000;
   color: #c11515;
@@ -190,4 +316,14 @@ footer a {
 
 footer a:hover {
   color: #ecf0f18f;
+}
+
+
+
+
+.footer2 {
+  background-color: #000000;
+  color: #c11515;
+  text-align: center;
+  font-size: larger;
 }
