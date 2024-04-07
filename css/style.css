@@ -232,8 +232,9 @@ header h1 {
 }
 
 #bild {
-  height: 470px;
+  height: 450px;
   width: auto;
+  border: 2px #c11515 solid;
 }
 
 #vk {
