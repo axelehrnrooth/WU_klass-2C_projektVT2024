@@ -107,7 +107,7 @@ header h1 {
 }
 
 .sign-backgrund {
-  background: url('SUP.jpg') no-repeat center center ;
+  background: url('../img/SUP.jpg') no-repeat center center !important;
 }
 
 .start {
@@ -290,9 +290,6 @@ header h1 {
 
 
 
-
-
-
 footer {
   background-color: #000000;
   color: #c11515;
@@ -327,4 +324,63 @@ footer a:hover {
   color: #c11515;
   text-align: center;
   font-size: larger;
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    --burgerline_width: 30px;
+    --burgerline_height: 5px;
+    --burgerline_margin: 6px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  #burger {
+    margin-right: 3.4rem;
+    cursor: pointer;
+  }
+
+  #nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    position: absolute;
+    top: -480px;
+    right: 0px;
+    width: 200px;
+    align-items: center;
+    z-index: 1;
+    background-color: #000000;
+    transition: all 0.5s;
+  }
+
+  .nav-active {
+    transform: translateY(580px);
+  }
+
+  .burger_line {
+    width: var(--burgerline_width);
+    height: var(--burgerline_height);
+    margin: var(--burgerline_margin);
+    background-color: #a7a7a7;
+    border-radius: 20%;
+  }
+
+  .crossed_line #burger_line2 {
+    opacity: 0;
+  }
+
+  .crossed_line #burger_line1 {
+    transform: translateY(calc(var(--burgerline_height) + var(--burgerline_margin))) rotate(45deg);
+  }
+
+  .crossed_line #burger_line3 {
+    transform: translateY(calc((-1)*(var(--burgerline_height) + var(--burgerline_margin)))) rotate(-45deg);
+  }
 }
